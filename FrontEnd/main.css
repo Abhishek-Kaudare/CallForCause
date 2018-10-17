@@ -1,28 +1,29 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
 
-.logo{
+.logo {
   float: left;
   padding: 4px 10px;
 }
-.logo a{
-  font-family: 'Pacifico', cursive;
+.logo a {
+  font-family: "Pacifico", cursive;
   text-decoration: none;
   color: white;
   font-size: 2rem;
   font-weight: 500;
 }
 
-div#header {
-
+nav#header {
   width: 100%;
   height: 70px;
   background-color: #f18053;
   border-bottom: 1px solid whitesmoke;
   position: sticky;
   top: 0px;
+  /* bottom: auto; */
+  z-index: 99;
   margin: 0 0 auto;
 }
 
@@ -45,17 +46,26 @@ ul.account-opt li.active {
   background-color: #f18053;
 }
 
-ul.account-opt li a{
+ul.account-opt li a {
   text-decoration: none;
   color: white;
   width: fit-content;
   height: fit-content;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 1.4em;
 }
 
+ul.account-opt li.active:hover {
+  background-color: #faf8f8;
+  color: #f18053;
+}
+
+ul.account-opt li.active a:hover {
+  color: inherit;
+}
+
 #banner {
-  background-image: url(/cover2.jpeg);
+  background-image: url(../cover.jpg);
   height: 100vh;
   background-size: cover;
   background-position: center;
@@ -66,17 +76,17 @@ div.container {
   box-sizing: border-box;
 }
 
-.card-wrapper-left{
+.card-wrapper-left {
   margin: 0 20px;
   padding-left: 15px;
   width: 45%;
   float: left;
-  
+
   /* background: #f1f1f1; */
   /* margin: 2rem; */
 }
 
-.card-wrapper-right{
+.card-wrapper-right {
   margin: 0 20px;
   padding-right: 15px;
   width: 45%;
@@ -89,7 +99,7 @@ div.container {
   display: flex;
   flex-direction: column;
   margin: 1rem auto;
-  box-shadow: 0 3px 7px -1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 7px -1px rgba(241, 128, 83, 0.5);
   margin-bottom: 1.6%;
   background: #fff;
   line-height: 1.4;
@@ -135,7 +145,7 @@ div.container {
   left: -120%;
   margin: auto;
   transition: left 0.2s;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(241, 128, 83, 0.9);
   color: #fff;
   padding: 10px;
   width: 100%;
@@ -195,7 +205,7 @@ div.container {
   text-align: right;
 }
 .blog-card .description .read-more a {
-  color: #5ad67d;
+  color: rgba(241, 128, 83, 1);
   display: inline-block;
   position: relative;
 }
@@ -223,7 +233,7 @@ div.container {
   content: "";
   position: absolute;
   height: 5px;
-  background: #5ad67d;
+  background: rgba(241, 128, 83, 1);
   width: 35px;
   top: -0.75rem;
   border-radius: 3px;
@@ -265,4 +275,80 @@ div.container {
   .blog-card.alt .details {
     padding-left: 25px;
   }
+}
+.container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  height: 100vh;
+  float: left;
+  background-color: rgb(168, 156, 156);
+  padding: 10px;
+  margin-right: 5px;
+  overflow-y: scroll;
+  scroll-behavior: auto;
+}
+
+.content-option {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  height: 100vh;
+  float: right;
+  background-color: rgb(230, 215, 215);
+  padding: 10px;
+  margin-left: 5px;
+}
+
+#pet-title {
+  background-color: antiquewhite;
+  margin-bottom: 5px;
+  padding: 10px;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 4em;
+  font-weight: 500;
+}
+
+#pet-details {
+  display: grid;
+  grid-template-columns: auto 250px;
+  background-color: rgb(190, 176, 158);
+  margin-bottom: 5px;
+  padding: 5px 5px 5px 10px;
+}
+
+#pet-details #meta-details {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+#pet-details p {
+  background-color: rgb(218, 184, 139);
+  margin-bottom: 5px;
+  font-size: 1em;
+}
+
+#pet-disc {
+  background-color: rgb(207, 128, 24);
+  height:auto;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  /* font-weight: 900; */
+  font-size: 1.3em;
+}
+
+#pet-disc p{
+  margin: 5px 5px 15px 0em;
+}
+
+#pet-disc:first-letter{
+  font-size: 3em;
+}
+
+#pet-sign-btn {
 }
