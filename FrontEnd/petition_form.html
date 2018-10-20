@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title> Petition From CFC</title>
+        <link rel="stylesheet" href="peteventform.css">
+    </head>
+    <body>
+        <nav id="header">
+        <div class="logo"><a href="#">CfC</a></div>
+            <ul class="account-opt active">
+              <li class="active"><a href="#!">Login </a></li>
+              <li class="active"><a href="#!">Account </a></li>
+            </ul>
+        </nav>
+        <div id = "pet_form">
+        <form name = petForm ; method = post ; id="peform">
+            Petition Title : &nbsp;&nbsp;
+            <br>
+            <input class= "input" type = text name="title">
+            <br><br>
+            Petition Category : &nbsp;&nbsp;
+            <!--input type="button" value="category" name="category" onclick="getCategories" id="pet_category"-->
+            <select id = "category" class="input" name="cars"><!-- add JS functon -->
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option>
+            </select>
+            <br><br>
+            Description  : &nbsp;&nbsp;
+            <br>
+            <textarea  rows = "5" cols = "60" name = "description">
+            </textarea>
+            <br><br>
+            Target Date : &nbsp;&nbsp;
+            <br>
+            <input class="input" type="date" name="target_date">
+            <br><br>
+            <input class="btn" type="submit" value="submit">
+            <br><br>
+            
+        </form> 
+        </div>
+    </body>
+</html>
